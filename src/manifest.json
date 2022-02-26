@@ -1,0 +1,15 @@
+{
+    "name": "Clear Submission for AtCoder",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Obmit the clicks",
+    "permissions": ["activeTab", "tabs", "storage"],
+    "content_scripts": [{
+      "matches": ["https://atcoder.jp/contests/*/submissions/me*"],
+      "js": [
+        "main.user.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }]
+  }
