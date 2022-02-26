@@ -5,7 +5,10 @@
     "description": "Obmit the clicks",
     "permissions": ["activeTab", "tabs", "storage"],
     "content_scripts": [{
-      "matches": ["https://atcoder.jp/contests/*/submissions/me*"],
+      "matches": [
+        "https://atcoder.jp/contests/*/submissions/me*",
+        "https://atcoder.jp/contests/*/tasks/*"
+      ],
       "js": [
         "main.user.js"
       ],
