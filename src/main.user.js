@@ -30,7 +30,7 @@ function showURL(){
     element.innerHTML = "<span class=\"btn-copy btn-pre\" id=\"copy\">Copy</span>" +
                         "<pre id=\"url\">" + beginStr + "</pre>\n" +
                         "<pre>" + lastStr + "</pre>";
-    e.parentNode.insertBefore(element, e.nextSibling);
+    e.parentNode.insertBefore(element, e);
     let copy = document.getElementById("copy");
     copy.onclick = function(){
         navigator.clipboard.writeText(beginStr).then(function() {
