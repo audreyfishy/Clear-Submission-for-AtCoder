@@ -40,6 +40,8 @@ function showURL(){
             }, 1000);
         });
     }
+    insertElement = document.createElement("hr");
+    element.parentNode.insertBefore(insertElement, element);
 }
 var url = location.href;
 if(url.match(/https:\/\/atcoder.jp\/contests\/.+\/submissions\/me.*/)) submission();
