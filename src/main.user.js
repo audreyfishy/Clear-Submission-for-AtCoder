@@ -27,7 +27,7 @@ function showURL(){
     let beginStr = url.substring(0, url.lastIndexOf("_") + 1);
     let lastStr = url.substring(url.lastIndexOf("_") + 1, url.length);
     element.classList.add("div-btn-copy");
-    element.innerHTML = "<span class=\"btn-copy btn-pre\" id=\"copy\">Copy</span>" +
+    element.innerHTML = "<span style='position: absolute; z-index:10000'class=\"btn-copy btn-pre\" id=\"copy\">Copy</span>" +
                         "<pre id=\"url\">" + beginStr + "</pre>\n" +
                         "<pre>" + lastStr + "</pre>";
     e.parentNode.insertBefore(element, e);
